@@ -1,12 +1,15 @@
 import Greeting from "./components/Greeting";
 
+// An Array
 // const Users = ['user1', 'user2']
-const User = { hobby: "bikes", age: 15 };
+
+// An Object
+// const User = { hobby: "bikes", age: 15 };
 
 function App() {
   return (
     <div>
-      <Greeting firstName="Aditya" lastName="Sharma" userInfo={User}/>
+      <Greeting firstName="Aditya" lastName="Sharma" />
     </div>
   );
 }

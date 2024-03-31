@@ -1,4 +1,12 @@
-function Greeting({ firstName, lastName, userInfo }) {// This destructuring is called parameter destructuring
+/* eslint-disable no-undef */
+import ShowFullName from "./ShowFullName";
+
+function Greeting(props) {
+
+  // This destructuring is called parameter destructuring
+
+  // This above setting a prop with a value is called default props
+
   //   const firstName = props.firstName;
   //   const lastName = props.lastName;
   //   const { firstName, lastName } = props;
@@ -8,15 +16,12 @@ function Greeting({ firstName, lastName, userInfo }) {// This destructuring is c
   //   props.lastName="yyy"
 
   // But after Destructing we can assign
-//   firstName = "xxx"; // This are default props
-//   lastName = "yyy"; // This is assigning default props
-
+  //   firstName = "xxx"; // This are default props
+  //   lastName = "yyy"; // This is assigning default props
 
   return (
     <div>
-      <h1>
-        Hello {firstName} {lastName} {userInfo.hobby} {userInfo.age}
-      </h1>
+      <ShowFullName {...props}/>
     </div>
   );
 }
