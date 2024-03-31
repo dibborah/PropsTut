@@ -1,17 +1,30 @@
 import Greeting from "./components/Greeting";
 
-// An Array
-// const Users = ['user1', 'user2']
-
-// An Object
-// const User = { hobby: "bikes", age: 15 };
-
 function App() {
   return (
     <div>
-      <Greeting firstName="Aditya" lastName="Sharma" />
+      <Greeting firstName="Elon" lastName="Musk">
+      <h2>Hii There!!!</h2>
+      </Greeting>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+// Notes :
+
+// An Array
+// const Users = ['user1', 'user2']
+
+// An Object
+// const User = { hobby: "bikes", age: 15 };
